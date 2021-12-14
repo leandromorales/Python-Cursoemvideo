@@ -12,3 +12,5 @@ if bis == 0:
 print(bis)
 print(biss)
 print(bisse)
+
+#https://docs.microsoft.com/pt-br/office/troubleshoot/excel/determine-a-leap-year#:~:text=Qualquer%20ano%20que%20seja%20uniformemente,e%201996%20s%C3%A3o%20anos%20bissextos.
