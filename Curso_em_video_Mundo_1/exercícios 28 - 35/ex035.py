@@ -9,3 +9,5 @@ if l1 + l2 == l3 or l1 + l3 == l2:
     print('Estas retas não formam um triângulo.')
 else:
     print('Estas retas formam um triângulo.')
+
+#https://brasilescola.uol.com.br/o-que-e/matematica/o-que-e-a-condicao-existencia-um-triangulo.htm
