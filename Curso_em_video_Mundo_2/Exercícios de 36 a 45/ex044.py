@@ -17,9 +17,14 @@ def calculo():
         print('Opção à vista no Cartão escolhida.')
         print('Valor final da compra: R${}'.format(final))
     elif condicao == 3:
-        print('Você escolheu a opção normal de ')
+        print('Opção normal de pagamento, em até 2x.')
+        print('Valor final da compra: R${}'.format(preco))
     else:
-        print('teste')
+        juros = (preco * 20) / 100
+        final = preco + juros
+        print('Opção parcelada em até 3x, com acréscimo de 20%.')
+        print('Valor final da compra R${}'.format(final))
+
 preco = float(input('Digite o valor do produto: R$ '))
 
 contador = 4
