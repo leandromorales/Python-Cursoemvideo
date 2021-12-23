@@ -3,9 +3,17 @@
 #Para identificar um número primo devemos dividi-lo sucessivamente por números primos como: 2, 3, 5. . . e verificar se a divisão é exata (em que o resto é zero) ou não exata (onde o resto é diferente de zero).
 # - Se o resto da divisão for zero o número não é primo.
 # - Se nenhum resto for zero, o número é primo.
-
-num = int(input('Digite um número inteiro: '))
-if num != 1 and num % 2 != 0 and num % 3 != 0 and num % 5 != 0 and num % 11 != 0:
-    print('O número {} é um número primo.'.format(num))
+tot = 0
+num = int(input('Digite um número: '))
+for c in range(1, num + 1):
+    if num % c == 0:
+        tot += 1
+        print('\033[33m', end='')
+    else:
+        print('\033[31m', end='')
+    print('{} '.format(c), end='')
+print('\n\033[mO número {} foi divisível {} vezes e '.format(num, tot), end='')
+if tot == 2:
+    print('é um número primo.')
 else:
-    print('O número {} não é um número primo.'.format(num))
+    print('não é um número primo.')
