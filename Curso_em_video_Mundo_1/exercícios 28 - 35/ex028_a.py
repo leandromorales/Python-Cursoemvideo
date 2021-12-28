@@ -3,7 +3,6 @@
 #O programa deverá escrever na tela se o usuário venceu ou perdeu.
 
 from random import randint
-from time import sleep
 
 lista = randint(0, 5)
 
