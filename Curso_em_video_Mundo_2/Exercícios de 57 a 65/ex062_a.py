@@ -4,18 +4,20 @@
 from time import sleep
 
 termo = int(input('Digite o primeiro termo da PA: '))
-razão = int(input('Digite a razão da PA: '))
+razao = int(input('Digite a razão da PA: '))
 cont = 1
-final = int(input('''Digite a quantidade de termos que você quer visualizar: 
+end = 1
+final = int(input('''Digite a quantidade de termos que você quer visualizar ou 
 Digite 0 para encerrar o programa: '''))
-while cont <= final:
+while cont <= final and end != 1:
     if final == 0:
         print('O programa será encerrado.')
         sleep(2)
         break
     if cont == final:
         print('{} - Fim.'.format(termo))
+        #end = int(input('teste'))
     else:
         print('{} -> '.format(termo), end='')
-    termo += razão
+    termo += razao
     cont += 1

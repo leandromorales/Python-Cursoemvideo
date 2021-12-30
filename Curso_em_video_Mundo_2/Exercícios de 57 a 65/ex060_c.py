@@ -4,10 +4,9 @@
 num = int(input('Digite um número para calcular o seu fatorial: '))
 fat = 1
 cont = num
-for c in range(num, 0, -1):
-    cont -= 1
-    print(c)
+for c in range(num, 1, -1):
     fat *= cont
-    print(fat)
+    cont -= 1
+    #print(fat)
 
 print('O Fatorial de {} é {}.'.format(num, fat))
