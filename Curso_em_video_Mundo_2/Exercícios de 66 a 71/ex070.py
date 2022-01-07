@@ -11,9 +11,13 @@ bar = ' '
 while True:
     nprod = str(input('Digite o nome do produto: '))
     npre = float(input('Digite o preço R$: '))
-    if npre < menor:
+    if cont == 0:
         bar = nprod
         menor = npre
+    elif menor > npre:
+        menor = npre
+        bar = nprod
+    cont += 1
     if npre > 1000:
         maism += 1
     tot += npre
