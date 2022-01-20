@@ -14,12 +14,18 @@ tabela = ('Atlético-MG', 'Flamengo', 'Palmeiras', 'Fortaleza', 'Corinthians', '
 
 print('=' * 30)
 print('Campeonato Brasileiro')
+
 print('=' * 30)
 print('Os cinco primeiros colocados na tabela são: ')
-for c in range(0, 5):
-    print(tabela[c], end=' ')
-print('')
+print(tabela[0:4])
+
 print('=' * 30)
 print('Os quatro últimos colocados na tabela são: ')
-for d in range(-16, -20):
-    print(d)
+print(tabela[16:])
+
+print('=' * 30)
+print('Tabela em ordem alfabética: ')
+print(sorted(tabela))
+
+print('=' * 30)
+print(f'O time da Chapecoense está na posição {enumerate(tabela[Chapecoense])}')
