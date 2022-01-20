@@ -28,4 +28,8 @@ print('Tabela em ordem alfabética: ')
 print(sorted(tabela))
 
 print('=' * 30)
-print(f'O time da Chapecoense está na posição {enumerate(tabela[Chapecoense])}')
+
+for count, time in enumerate(tabela):
+    if time == 'Chapecoense':
+        posi = count + 1
+        print(f'O time da Chapecoense está na posição {posi}.')
