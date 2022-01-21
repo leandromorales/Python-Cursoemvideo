@@ -37,6 +37,9 @@ print(c.count(0))
 pessoa = (28, 'Gustavo', 55.98)
 print(pessoa)
 
+#Mostrar posição de número ou caracter:
+#{times.index("Chapecoense") + 1}ª
+
 #Apagar tupla
 
 del(pessoa)
