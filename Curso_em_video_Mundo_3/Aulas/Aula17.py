@@ -60,3 +60,11 @@ print(f'Lista A: {a};')
 print(f'Lista B: {b}.')
 
 print('-' * 30)
+
+#Mostrar posição de um caracter em uma lista:
+#valores.index(5))
+#valores.index(max(valores))
+
+#Max and Min values in a list:
+#max(valores)
+#min(valores)
