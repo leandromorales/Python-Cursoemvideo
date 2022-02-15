@@ -8,7 +8,7 @@ print('{:^30}'.format('BANCO CEV'))
 valor = int(input('Que valor você quer sacar? R$'))
 total = valor
 ced = 50
-totced = 0
+totced = 00
 while True:
     if total >= ced:
         total -= ced
