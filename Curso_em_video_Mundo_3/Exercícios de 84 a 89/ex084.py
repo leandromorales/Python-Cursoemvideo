@@ -23,16 +23,18 @@ menores = list()
 
 for c in range(0, len(final)):
     if c == 0:
-        maior = menor = final[c] [1]
-        maiores.append(final [c] [0])
-        menores.append(final [c] [0])
-    if final [c] [1] > maior:
-        maior = final [c] [1]
-        maiores[0] = final [c] [0]
-    if final [c] [1] < menor:
-        menor = final [c] [1]
-        maiores
+        maior = menor = final[c][1]
+    if final[c][1] > maior:
+        maior = final[c][1]
+    if final[c][1] < menor:
+        menor = final[c][1]
+
+for c in range(0, len(final)):
+    if final[c][1] == maior:
+        maiores.append(final[c][0])
+    if final[c][1] == menor:
+        menores.append(final[c][0])
 
 print(f'Foram cadastradas {len(final)} pessoas.')
-print(f'maior: {maior}')
-print(f'menor: {menor}')
+print(f'As pessoas mais pesadas são: {maiores}, com {maior}KG.')
+print(f'As pessoas mais leves são: {menores}, com {menor}KG.')
