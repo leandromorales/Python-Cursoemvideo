@@ -63,4 +63,14 @@ print(brasil)
 print(brasil[0])
 print(brasil[0]['uf'])
 
-#vídeo 24:38
+print()
+state = dict()
+br = list()
+for c in range(0, 3):
+    state['uf'] = str(input('Unidade Federativa: '))
+    state['sigla'] = str(input('Sigla: '))
+    br.append(state.copy())
+for e in br:
+    for v in e.values():
+        print(v, end=' ')
+    print()
