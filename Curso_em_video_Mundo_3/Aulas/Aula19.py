@@ -74,3 +74,7 @@ for e in br:
     for v in e.values():
         print(v, end=' ')
     print()
+
+'''Itens, keys and values. Item is the unit of keys and values within a dictionary. In the example listed below, each item
+separated for a comma is an item. In each item there is a key in the left and a value in the right: 
+pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 22}'''
