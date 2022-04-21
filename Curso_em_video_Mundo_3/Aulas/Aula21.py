@@ -71,4 +71,53 @@ Global Scope: if a variable is declared in global scope, it'll run in every func
 Local Scope: if a variable is declared only in local scope, it'll run only within the local function.
 '''
 
-#27:56
+def funcao():
+    n1 = 4
+    print(f'N1 local vale {n1}')
+
+n1 = 2
+funcao()
+print(f'N1 global vale {n1}')
+
+
+def funcaoo():
+    global nn1
+    nn1 = 4
+    print(f'NN1 local vale {nn1}')
+
+nn1 = 2
+funcaoo()
+print(f'NN1 global vale {nn1}')
+
+def somare(a=0, b=0, c=0):
+    s = a + b + c
+    return s
+
+r1 = somare(3, 2, 5)
+r2 = somare(2, 2)
+r3 = somare(6)
+
+print(f'Os resultados foram {r1}, {r2} e {r3}')
+
+def fatorial(num = 1):
+    f = 1
+    for c in range(num, 0, -1):
+        f *= c
+    return f
+f1 = fatorial(5)
+f2 = fatorial(4)
+f3 = fatorial()
+
+print(f'Os resultados são {f1}, {f2} e {f3}')
+
+def par(n=0):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+num = int(input('Digite um número: '))
+if par(num):
+    print('É par!')
+else:
+    print('Não é par!')
