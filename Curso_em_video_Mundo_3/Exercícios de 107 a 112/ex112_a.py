@@ -2,7 +2,10 @@
 Transfira todas as funções utilizadas nos desafios 107, 108 e 109 para o primeiro pacote e mantenha
  tudo funcionando.'''
 
-from ex111.utilidadesCeV.moeda import moedas
-p = float(input('Digite o preço R$: '))
-moedas.resumo(p, 50, 50)
 
+
+from ex112_a.utilidadescev import moedas
+from ex112_a.utilidadescev import dado
+
+p = dado.leiaDinheiro('Digite o preço R$: ')
+moedas.resumo(p, 10, 5)
