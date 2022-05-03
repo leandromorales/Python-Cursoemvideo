@@ -1,0 +1,1 @@
+'''Crie um código em Python que testes se o site pudim está acessível pelo computador usado.'''
